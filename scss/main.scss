@@ -18,3 +18,61 @@ Extend:
 - Add custom styles directly.
 
 */
+
+:root {
+    --black: #000;
+    --gray: #667085;
+    --light-blue: #33B6FF;
+    --tab-blue: #d6e5ea;
+    --orange: #F2B45A;
+}
+
+#sidebar section {
+    border: none !important;
+}
+
+#popular-this-week {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #f2f7f8;
+}
+
+#popular-this-week h2 {
+    color: var(--light-blue);
+}
+
+#popular-this-week ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#popular-this-week ul li {
+    border-bottom: 1px solid var(--tab-blue);
+    margin-bottom: 20px;
+}
+
+#popular-this-week .list-group{
+
+}
+
+#popular-this-week .list-group a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray);
+    background-color: #f2f7f8;
+    border-bottom: 1px solid var(--tab-blue);
+    padding: 20px 5px;
+    align-items: center !important;
+}
+
+#popular-this-week a span {
+    display: table;
+    padding: 1px 10px;
+    font-size: 0.8rem;
+    background-color: var(--orange);
+    color: var(--black);
+    border-radius: 16px;
+    width: auto;
+}
