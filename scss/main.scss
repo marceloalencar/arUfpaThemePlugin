@@ -19,6 +19,8 @@ Extend:
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
 :root {
     --black: #000;
     --gray: #667085;
@@ -29,6 +31,46 @@ Extend:
 
 #sidebar section {
     border: none !important;
+}
+
+#apresentacao-ufpa {
+    background-color: rgb(67,67,67);
+}
+
+#apresentacao-ufpa h1 {
+    color: #ec4624;
+    font-family: 'Roboto', 'Arial';
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+#apresentacao-ufpa .descricao {
+    color: #f3f3f3;
+    font-family: 'Arial';
+    font-size: 11pt;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 479px) {
+    #apresentacao-ufpa h1 {
+        font-size: 18.0pt;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #apresentacao-ufpa h1 {
+        font-size: 19.0pt;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #apresentacao-ufpa h1 {
+        font-size: 20.0pt;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    #apresentacao-ufpa h1 {
+        font-size: 20.0pt;
+    }
 }
 
 #popular-this-week {
