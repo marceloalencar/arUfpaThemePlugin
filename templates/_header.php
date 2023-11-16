@@ -35,3 +35,21 @@
     </div>
   </div>
 </header>
+
+<?php if (sfConfig::get('app_toggleLogo')) { ?>
+  <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => __('AtoM logo')]); ?>
+<?php } ?>
+
+<?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
+  <span><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></span>
+<?php } ?>
+
+<?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
+  <div>
+    <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
+  </div>
+<?php } ?>
+
+<div>
+  <?php echo get_component('search', 'box'); ?>
+</div>
