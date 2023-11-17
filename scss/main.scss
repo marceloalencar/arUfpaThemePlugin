@@ -19,7 +19,7 @@ Extend:
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap');
 
 :root {
     --black: #000;
@@ -42,6 +42,7 @@ Extend:
     font-family: 'Roboto', 'Arial';
     font-weight: normal;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 #apresentacao-ufpa .descricao {
@@ -50,26 +51,85 @@ Extend:
     font-size: 11pt;
     font-weight: normal;
     margin-bottom: 0px;
+    text-align: center;
+}
+
+#apresentacao-ufpa .numeros {
+    color: #f9f9f9;
+    font-family: Nunito;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
+    display: block;
+    line-height: 1.38;
+}
+
+#apresentacao-ufpa .numeros :first-child {
+    text-align: center;
+}
+
+#apresentacao-ufpa .numeros :not(:first-child) {
+    font-size: 10pt;
+    margin-bottom: 0;
+    margin-top: 6pt;
+    text-align: center;
 }
 
 @media only screen and (max-width: 479px) {
     #apresentacao-ufpa h1 {
         font-size: 18.0pt;
     }
+
+    #apresentacao-ufpa .numeros {
+        width: 100%;
+    }
+
+    #apresentacao-ufpa .numeros :first-child {
+        margin: 0;
+        font-size: 23pt;
+    }
+
+    #apresentacao-ufpa .numeros :last-child {
+        margin-bottom: 1rem;
+    }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     #apresentacao-ufpa h1 {
         font-size: 19.0pt;
+    }
+
+    #apresentacao-ufpa .numeros {
+        width: 100%;
+    }
+
+    #apresentacao-ufpa .numeros :first-child {
+        margin: 0;
+        font-size: 27pt;
+    }
+
+    #apresentacao-ufpa .numeros :last-child {
+        margin-bottom: 1rem;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #apresentacao-ufpa h1 {
         font-size: 20.0pt;
     }
+
+    #apresentacao-ufpa .numeros :first-child {
+        margin: 0;
+        font-size: 30pt;
+    }
 }
 @media only screen and (min-width: 1280px) {
     #apresentacao-ufpa h1 {
         font-size: 20.0pt;
+    }
+
+    #apresentacao-ufpa .numeros :first-child {
+        margin: 0;
+        font-size: 30pt;
     }
 }
 
@@ -91,10 +151,6 @@ Extend:
 #popular-this-week ul li {
     border-bottom: 1px solid var(--tab-blue);
     margin-bottom: 20px;
-}
-
-#popular-this-week .list-group{
-
 }
 
 #popular-this-week .list-group a {
