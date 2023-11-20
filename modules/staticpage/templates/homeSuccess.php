@@ -30,15 +30,18 @@
 
 <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
 <?php if ($browseMenu->hasChildren()) { ?>
-  <section class="card mb-3">
-    <div class="list-group list-group-flush">
-      <?php foreach ($browseMenu->getChildren() as $item) { ?>
-        <a
-          class="list-group-item list-group-item-action"
-          href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>">
-          <?php echo esc_specialchars($item->getLabel(['cultureFallback' => true])); ?>: <?php echo esc_specialchars($item->getDescription(['cultureFallback' => true])); ?>
-        </a>
-      <?php } ?>
-    </div>
+  <section id="menu-destaque" class="row row-cols-1 row-cols-md-3 g-4 mb-3">    
+    <?php foreach ($browseMenu->getChildren() as $item) { ?>
+      <div class="col">
+        <div class="card h-100">
+        <?php echo image_tag('/plugins/arUfpaThemePlugin/images/foto_arquivo.jpg', ['class' => 'card-img-top']); ?>
+          <div class="d-flex flex-column card-body">
+            <h5 class="card-title"><?php echo esc_specialchars($item->getLabel(['cultureFallback' => true])); ?></h5>
+            <p class="card-text"><?php echo esc_specialchars($item->getDescription(['cultureFallback' => true])); ?></p>
+            <a class="mt-auto btn btn-primary" href="<?php echo url_for($item->getPath(['getUrl' => true, 'resolveAlias' => true])); ?>">Acessar</a>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
   </section>
 <?php } ?>
