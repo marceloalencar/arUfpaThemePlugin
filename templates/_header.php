@@ -36,20 +36,24 @@
   </div>
 </header>
 
-<?php if (sfConfig::get('app_toggleLogo')) { ?>
-  <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => __('AtoM logo')]); ?>
-<?php } ?>
+<div class="container" id="cabecalho-busca">
+  <div class="d-flex flex-column">
+    <?php if (sfConfig::get('app_toggleLogo')) { ?>
+      <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => __('AtoM logo'), 'class' => 'mx-auto']); ?>
+    <?php } ?>
 
-<?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
-  <span><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></span>
-<?php } ?>
+    <?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
+      <h1 class="text-center"><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></h1>
+    <?php } ?>
 
-<?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
-  <div>
-    <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
+    <?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
+      <p class="text-center">
+        <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
+      </p>
+    <?php } ?>
   </div>
-<?php } ?>
 
-<div>
-  <?php echo get_component('search', 'box'); ?>
+  <div>
+    <?php echo get_component('search', 'box'); ?>
+  </div>
 </div>
