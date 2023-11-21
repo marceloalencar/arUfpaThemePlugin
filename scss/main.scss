@@ -134,7 +134,7 @@ Extend:
 }
 
 #cabecalho-busca {
-    background-image: url("/plugins/arUfpaThemePlugin/images/foto_orla.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/plugins/arUfpaThemePlugin/images/foto_orla.jpg");
     height: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,10 +144,12 @@ Extend:
 
 #cabecalho-busca h1 {
     color: #FFF;
+    font-weight: 600 !important;
 }
 
-#cabecalho-busca p {
+#cabecalho-busca h3 {
     color: #FFF;
+    font-weight: 600 !important;
 }
 
 #popular-this-week {

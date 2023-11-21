@@ -16,6 +16,16 @@
 
 <header id="top-bar" class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="<?php echo __('Main navigation'); ?>">
   <div class="container-fluid">
+      <?php if (sfConfig::get('app_toggleLogo') || sfConfig::get('app_toggleTitle')) { ?>
+      <a class="navbar-brand d-flex flex-wrap flex-lg-nowrap align-items-center py-0 me-0" href="<?php echo url_for('@homepage'); ?>" title="<?php echo __('Home'); ?>" rel="home">
+        <?php if (sfConfig::get('app_toggleLogo')) { ?>
+          <?php echo image_tag('/plugins/arDominionB5Plugin/images/logo', ['alt' => __('AtoM logo'), 'class' => 'd-inline-block my-2 me-3', 'height' => '35']); ?>
+        <?php } ?>
+        <?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
+          <span class="text-wrap my-1 me-3"><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></span>
+        <?php } ?>
+      </a>
+    <?php } ?>
     <button class="navbar-toggler atom-btn-secondary my-2 me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
       <span class="visually-hidden"><?php echo __('Toggle navigation'); ?></span>
@@ -36,24 +46,14 @@
   </div>
 </header>
 
-<div class="container" id="cabecalho-busca">
+<div class="container pt-5" id="cabecalho-busca">
   <div class="d-flex flex-column">
-    <?php if (sfConfig::get('app_toggleLogo')) { ?>
-      <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => __('AtoM logo'), 'class' => 'mx-auto']); ?>
-    <?php } ?>
-
-    <?php if (sfConfig::get('app_toggleTitle') && !empty(sfConfig::get('app_siteTitle'))) { ?>
-      <h1 class="text-center"><?php echo esc_specialchars(sfConfig::get('app_siteTitle')); ?></h1>
-    <?php } ?>
-
-    <?php if (sfConfig::get('app_toggleDescription') && !empty(sfConfig::get('app_siteDescription'))) { ?>
-      <p class="text-center">
-        <?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?>
-      </p>
-    <?php } ?>
+    <h1 class="text-uppercase text-center mb-1">Repositório Arquivístico Digital Confiável</h1>
+    <h3 class="text-center">Universidade Federal do Pará</h3>
+    <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => 'Brasão UFPA', 'class' => 'mx-auto', 'height' => '170px']); ?>
   </div>
 
-  <div>
+  <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1">
     <?php echo get_component('search', 'box'); ?>
   </div>
 </div>
