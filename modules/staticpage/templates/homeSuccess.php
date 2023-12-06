@@ -30,7 +30,7 @@
 
 <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID); ?>
 <?php if ($browseMenu->hasChildren()) { ?>
-  <section id="menu-destaque" class="row row-cols-1 row-cols-md-3 g-4 mb-3">    
+  <section id="menu-destaque" class="row row-cols-1 row-cols-md-4 g-4 mb-3">    
     <?php foreach ($browseMenu->getChildren() as $item) { ?>
       <div class="col">
         <div class="card h-100">

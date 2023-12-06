@@ -53,7 +53,26 @@
     <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => 'Brasão UFPA', 'class' => 'mx-auto', 'height' => '170px']); ?>
   </div>
 
-  <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1">
+  <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1 justify-content-center">
+    <div class="btn-group flex-wrap my-2">
+      <button class="btn btn-sm atom-btn-secondary" type="button">
+        Apresentação
+      </button>
+      <button class="btn btn-sm atom-btn-secondary" type="button">
+        Como Usar
+      </button>
+      <a class="btn btn-sm atom-btn-secondary" href="<?php echo url_for([
+          'module' => 'informationobject',
+          'action' => 'browse',
+          'showAdvanced' => true,
+          'topLod' => false,
+      ]); ?>">
+        <?php echo __('Advanced search'); ?>
+      </a>
+      <button class="btn btn-sm atom-btn-secondary" type="button">
+        Arranjo
+      </button>
+    </div>
     <?php echo get_component('search', 'box'); ?>
   </div>
 </div>
