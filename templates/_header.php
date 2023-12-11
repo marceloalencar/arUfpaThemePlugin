@@ -48,7 +48,7 @@
 
 <div class="container pt-5" id="cabecalho-busca">
   <div class="d-flex flex-column">
-    <h1 class="text-uppercase text-center mb-1">Repositório Arquivístico Digital Confiável</h1>
+    <h1 class="text-uppercase text-center mb-1">Arquivo Digital</h1>
     <h3 class="text-center">Universidade Federal do Pará</h3>
     <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => 'Brasão UFPA', 'class' => 'mx-auto', 'height' => '170px']); ?>
   </div>
