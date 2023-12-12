@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include_title(); ?>
     <?php echo get_component('default', 'tagManager', ['code' => 'script']); ?>
-    <link rel="shortcut icon" href="<?php echo public_path('favicon.ico'); ?>">
+    <link rel="shortcut icon" href="<?php echo public_path('/plugins/arUfpaThemePlugin/favicon.ico'); ?>">
     <%= htmlWebpackPlugin.tags.headTags %>
     <?php echo get_component_slot('css'); ?>
   </head>
