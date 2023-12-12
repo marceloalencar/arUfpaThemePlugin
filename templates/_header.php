@@ -50,17 +50,25 @@
   <div class="d-flex flex-column">
     <h1 class="text-uppercase text-center mb-1">Arquivo Digital</h1>
     <h3 class="text-center">Universidade Federal do Pará</h3>
-    <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => 'Brasão UFPA', 'class' => 'mx-auto', 'height' => '170px']); ?>
+    <?php echo image_tag('/plugins/arUfpaThemePlugin/images/logo', ['alt' => 'Brasão UFPA', 'class' => 'mx-auto mb-3', 'height' => '170px']); ?>
   </div>
 
   <div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1 justify-content-center">
     <div class="btn-group flex-wrap my-2">
-      <button class="btn btn-sm atom-btn-secondary" type="button">
+      <a class="btn btn-sm atom-btn-secondary" href="<?php echo url_for([
+        'module' => 'staticpage',
+        'action' => 'index',
+        'slug' => 'apresentacao',
+      ]); ?>">
         Apresentação
-      </button>
-      <button class="btn btn-sm atom-btn-secondary" type="button">
+      </a>
+      <a class="btn btn-sm atom-btn-secondary" href="<?php echo url_for([
+        'module' => 'staticpage',
+        'action' => 'index',
+        'slug' => 'como-usar',
+      ]); ?>">
         Como Usar
-      </button>
+      </a>
       <a class="btn btn-sm atom-btn-secondary" href="<?php echo url_for([
           'module' => 'informationobject',
           'action' => 'browse',
@@ -69,9 +77,13 @@
       ]); ?>">
         <?php echo __('Advanced search'); ?>
       </a>
-      <button class="btn btn-sm atom-btn-secondary" type="button">
+      <a class="btn btn-sm atom-btn-secondary" href="<?php echo url_for([
+        'module' => 'staticpage',
+        'action' => 'index',
+        'slug' => 'arranjo',
+      ]); ?>">
         Arranjo
-      </button>
+      </a>
     </div>
     <?php echo get_component('search', 'box'); ?>
   </div>
