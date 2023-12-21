@@ -133,6 +133,22 @@ Extend:
     }
 }
 
+#apresentacao-ufpa .rodape {
+    color: #f3f3f3;
+    font-family: "Roboto","Arial";
+    font-size: 9pt;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#apresentacao-ufpa .rodape a {
+    color: #ec4624;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 #cabecalho-busca {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/plugins/arUfpaThemePlugin/images/foto_orla.jpg");
     height: auto;
