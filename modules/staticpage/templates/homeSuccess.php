@@ -11,26 +11,6 @@
 
 <?php end_slot(); ?>
 
-<section id="apresentacao-ufpa" class="mb-3">
-  <div class="d-flex flex-column align-items-center px-3 pt-3">
-    <h1>UFPA: MAIS QUE UMA UNIVERSIDADE</h1>
-    <p class="descricao"><br></p>
-    <p class="descricao">A Universidade Federal do Pará está presente em 78 municípios paraenses</p>
-    <p class="descricao">com atividades vinculadas a 12 <em>campi</em>: Abaetetuba, Altamira, Ananindeua, Belém, Bragança,</p>
-    <p class="descricao">Breves, Cametá, Capanema, Castanhal, Salinópolis, Soure e Tucuruí.</p>
-  </div>
-  <div class="d-flex flex-row flex-wrap justify-content-center px-3 py-3">
-    <div class="numeros flex-fill"><p>5.455</p><p>DOCENTES E TÉCNICOS</p></div>
-    <div class="numeros flex-fill"><p>56.235</p><p>ALUNOS</p></div>
-    <div class="numeros flex-fill"><p>157</p><p>CURSOS DE GRADUAÇÃO</p></div>
-    <div class="numeros flex-fill"><p>144</p><p>CURSOS DE</p><p>PÓS-GRADUAÇÃO</p></div>
-    <div class="numeros flex-fill"><p>63</p><p>CURSOS DE</p><p>RESIDÊNCIA E ESPECIALIZAÇÃO</p></div>
-  </div>
-  <div class="d-flex flex-column align-items-center px-3 pb-3">
-    <p class="rodape">Fonte: <a href="https://www.anuario.ufpa.br/">Anuário Estatístico 2023</a></p>
-  </div>
-</section>
-
 <section id="menu-destaque" class="row row-cols-1 row-cols-md-4 g-4 mb-3">
     <div class="col">
       <div class="card h-100">
