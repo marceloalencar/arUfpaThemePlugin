@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div id="info-footer" class="bg-dark text-light text-center lh-sm px-3 py-3">
+  <div id="info-footer" class="text-light text-center lh-sm px-3 py-3">
       <strong>Universidade Federal do Pará</strong><br>
       Rua Augusto Corrêa, 1 - Guamá - Belém/PA - Brasil
   </div>

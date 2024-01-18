@@ -7,6 +7,10 @@ Customize variables:
 - Import B5 functions, variables and mixins if needed.
 
 */
+$primary: #BF172B;
+$secondary: #751621;
+$dark: $primary;
+$navbar-dark-hover-color: $secondary;
 
 @import "../../arDominionB5Plugin/scss/main.scss";
 
@@ -19,12 +23,33 @@ Extend:
 
 */
 
-:root {
-    --black: #000;
-    --gray: #667085;
-    --light-blue: #33B6FF;
-    --tab-blue: #d6e5ea;
-    --orange: #F2B45A;
+#user-menu {
+    border-color: unset;
+    background-color: $primary;
+}
+
+#user-menu:hover,
+#user-menu:focus {
+    border-color: unset;
+    background-color: $secondary;
+}
+
+@media (max-width: 992px) {
+    #navbar-content .nav-item.dropdown:hover,
+    #navbar-content .nav-item.dropdown:focus {
+        background-color: #FFF;
+    }
+}
+
+.navbar-toggler {
+    border-color: #FFF !important;
+    background-color: $primary;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    border-color: #FFF;
+    background-color: $secondary;
 }
 
 #sidebar section {
@@ -55,11 +80,7 @@ Extend:
 #popular-this-week {
     padding: 15px 20px;
     border-radius: 8px;
-    background-color: #f2f7f8;
-}
-
-#popular-this-week h2 {
-    color: var(--light-blue);
+    background-color: #E7E7E7;
 }
 
 #popular-this-week ul {
@@ -68,7 +89,7 @@ Extend:
 }
 
 #popular-this-week ul li {
-    border-bottom: 1px solid var(--tab-blue);
+    border-bottom: 1px solid rgba(191, 23, 43, 0.2);
     margin-bottom: 20px;
 }
 
@@ -77,9 +98,8 @@ Extend:
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: var(--gray);
-    background-color: #f2f7f8;
-    border-bottom: 1px solid var(--tab-blue);
+    background-color: #E7E7E7;
+    border-bottom: 1px solid rgba(191, 23, 43, 0.2);
     padding: 20px 5px;
     align-items: center !important;
 }
@@ -88,14 +108,15 @@ Extend:
     display: table;
     padding: 1px 10px;
     font-size: 0.8rem;
-    background-color: var(--orange);
-    color: var(--black);
+    background-color: $primary;
+    color: #FFF;
     border-radius: 16px;
     width: auto;
 }
 
 #info-footer {
     font-size: smaller;
+    background-color: $secondary;
 }
 
 #info-footer strong {
