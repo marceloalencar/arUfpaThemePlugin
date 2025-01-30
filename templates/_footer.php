@@ -15,7 +15,7 @@
 
   <div id="info-footer" class="text-light text-center lh-sm px-3 py-3">
       <strong>Universidade Federal do Pará</strong><br>
-      Rua Augusto Corrêa, 1 - Guamá - Belém/PA - Brasil
+      Rua Augusto Corrêa, 1 - Guamá - Belém/PA - Brasil.
   </div>
 </footer>
 
