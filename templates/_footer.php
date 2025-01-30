@@ -19,14 +19,11 @@
   </div>
 </footer>
 
-<?php $gaKey = sfConfig::get('app_google_analytics_api_key', ''); ?>
-<?php if (!empty($gaKey)) { ?>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $gaKey; ?>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    <?php include_slot('google_analytics'); ?>
-    gtag('config', '<?php echo $gaKey; ?>');
-  </script>
-<?php } ?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S3JSPPJCX4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S3JSPPJCX4');
+</script>
