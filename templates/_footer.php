@@ -13,13 +13,7 @@
     </div>
   </div>
 
-  <div id="info-footer" class="text-light text-center lh-sm px-3 py-3">
-      <strong>Universidade Federal do Pará</strong><br>
-      Rua Augusto Corrêa, 1 - Guamá - Belém/PA - Brasil.
-  </div>
-</footer>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S3JSPPJCX4"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3JSPPJCX4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -27,3 +21,11 @@
 
   gtag('config', 'G-S3JSPPJCX4');
 </script>
+
+  <div id="info-footer" class="text-light text-center lh-sm px-3 py-3">
+      <strong>Universidade Federal do Pará</strong><br>
+      Rua Augusto Corrêa, 1 - Guamá - Belém/PA - Brasil.
+  </div>
+</footer>
+
+
